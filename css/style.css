@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #8c61ff;
+  --color-secondary: #44c2fd;
+}
+
+* {
+  /* border: 1px solid black; */
+}
+
+/* background */
+.bg--primary {
+  background-color: var(--color-primary);
+}
