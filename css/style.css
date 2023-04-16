@@ -11,3 +11,18 @@
 .bg--primary {
   background-color: var(--color-primary);
 }
+.bg--secondary {
+  background-color: var(--color-secondary);
+}
+
+.img--container {
+}
+
+.form-control::placeholder {
+  color: rgb(215, 215, 215);
+}
+
+label {
+  font-weight: bolder;
+  color: var(--color-primary);
+}

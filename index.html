@@ -19,60 +19,57 @@
     <script src="main.js"></script>
   </head>
 
-  <body class="bg--primary">
+  <body class="bg--primary vh-100 d-flex align-items-center">
     <div class="container-fluid">
-      <div class="row justify-content-center vh-100 align-items-center">
-        <div class="col-11 col-md-9 col-lg-7">
-          <h1 class="text-center text-white">
-            Calcola il prezzo del biglietto
-          </h1>
+      <div class="row justify-content-center">
+        <div class="col-11 col-md-7 col-lg-5 bg-light shadow rounded-4">
+          <h2 class="my-5">Calcola il prezzo del tuo biglietto</h2>
           <div class="row">
-            <div class="col-12 text-center py-4 bg-light rounded shadow">
-              <form action="post" class="container-fluid my-3">
-                <div class="row">
-                  <div class="col-12">
-                    <label for="form_ame"> Nome e cognome </label>
-                    <input
-                      type="text"
-                      name="form_name"
-                      id="form_name"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="form_dist"> Km da percorrere </label>
-                    <input
-                      type="text"
-                      name="form_dist"
-                      id="form_dist"
-                      class="form-control"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="userAge"> Fascia d'età </label>
-                    <input
-                      type="number"
-                      name="form_age"
-                      id="age"
-                      class="form-control"
-                    />
-                  </div>
+            <div class="col-7 py-4 px-4">
+              <form action="post" id="infoForm">
+                <!-- infoForm__name -->
+                <div class="form-group">
+                  <label for="infoForm__name"> Nome </label>
+                  <input
+                    type="text"
+                    class="form-control mb-4"
+                    id="infoForm__name"
+                    name="infoForm__name"
+                    placeholder="Il tuo nome qui"
+                  />
+                </div>
+                <!-- infoForm__km -->
+                <div class="form-group">
+                  <label for="infoForm__km"> Distanza (in Km) </label>
+                  <input
+                    type="text"
+                    class="form-control mb-4"
+                    id="infoForm__km"
+                    name="infoForm__km"
+                    placeholder="Dove la tua prosisima avventura?"
+                  />
+                </div>
+                <!-- infoForm__age -->
+                <div class="form-group">
+                  <label for="infoForm__age"> Età </label>
+                  <input
+                    type="text"
+                    class="form-control mb-4"
+                    id="infoForm__age"
+                    name="infoForm__age"
+                    placeholder="La tua età"
+                  />
                 </div>
               </form>
-              <div class="container d-flex gap-3">
-                <button
-                  class="btn btn-dark rounded-pill w-50 py-3"
-                  id="form__btn--genera"
-                >
-                  Genera
-                </button>
-                <button
-                  class="btn btn-dark rounded-pill w-50 py-3"
-                  id="form__btn--annulla"
-                >
-                  Annulla
-                </button>
-              </div>
+            </div>
+            <div
+              class="col-5 bg-light border-start d-flex flex-column justify-content-center rounded-end-5"
+            >
+              <img
+                src="./Electric Streetcar Tram or Trolley - Vector Image-2.png"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
         </div>

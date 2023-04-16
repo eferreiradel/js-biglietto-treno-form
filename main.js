@@ -1,20 +1,18 @@
-let userKm = 10;
-let userAge = "5";
+let userKm = 15;
+let userAge = 45;
 
-const basePrice = 1 * userKm;
+const basePrice = 0.24 * userKm;
 
 // minor 12 discount
 let minorDiscount = (basePrice / 100) * 20;
-minorDiscount.toFixed(2);
 
 // over 65 discount
 let seniorDiscount = (basePrice / 100) * 40;
-seniorDiscount.toFixed(2);
 
 if (userAge <= 12) {
-  console.log(basePrice - minorDiscount);
+  console.log(basePrice - minorDiscount.toFixed(2));
 } else if (userAge >= 65) {
-  console.log(basePrice - seniorDiscount);
+  console.log(basePrice - seniorDiscount.toFixed(2));
 } else {
-  console.log(basePrice);
+  console.log(basePrice.toFixed(2));
 }
